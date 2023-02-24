@@ -1,0 +1,16 @@
+Feature: Automation Challenge for Teladoc
+  
+    As an Engr. Candidate, I need to automate http://www.way2automation.com/angularjs-protractor/webtables/
+    So that I can show my awesome automation skills
+
+Scenario: Add a user and validate the user has been added to the table
+Given A successful browse to the website
+When I do click on addUser button and
+fill modal with the user information and then
+do click on save button
+Then user user should be added to the table
+
+Scenario: Delete the user "novak" from the table and validate the user has been deleted.
+When I find a user to be delted and I do click on delete button
+Then System show me a conformation message and I do click in ok
+and user should be deleted from the table

@@ -1,0 +1,11 @@
+{
+    "firstName": "Gabriel",
+    "lastName":"Batistuta",
+    "userName": "batistutag",
+    "password":"123456",
+    "role":"Customer",
+    "email": "test@test.com",
+    "cellphone": "+13052489632",
+    "userToBeDeleted":"novak"
+
+  }

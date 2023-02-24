@@ -1,3 +1,6 @@
+import addUser from "../pages/addUser"
+import deleteUser from "../pages/deleteUser"
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -23,3 +26,33 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('addUser', () => {
+    addUser.addUserBtn()
+    addUser.name()
+    addUser.lastName()
+    addUser.username()
+    addUser.password()
+    addUser.optCustomer()
+    addUser.role()
+    addUser.email()
+    addUser.phone()
+    addUser.btnSave()
+    addUser.validate()
+    addUser.validateUserAdded()
+})
+
+Cypress.Commands.add('delUser', () => {
+    deleteUser.goToUser()
+    deleteUser.modalConfirmation()
+    deleteUser.deleteUser()
+    deleteUser.validateUserDeleted()
+})
+Cypress.Commands.add('getSizeofTable',()=>{
+    cy.get("tbody")
+            .find("tr")
+            .then((row) => {
+                //row.length will give you the row count
+                cy.log('The size of the table is: ' + row.length);
+            });
+})
