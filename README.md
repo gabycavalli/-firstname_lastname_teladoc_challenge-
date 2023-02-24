@@ -47,7 +47,8 @@ Node --version
 
 ### Install - In repo folder
 
-```npm install cypress --save-dev
+```
+npm install cypress --save-dev
 ```
 
 ## Run Cypress
