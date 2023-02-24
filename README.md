@@ -34,7 +34,7 @@ Install CLI
 ```
 sudo apt install curl
 ```
-* Begin Instalation
+* Start Installation
 ```
 sudo apt-get install -y nodejs
 ```
@@ -76,7 +76,7 @@ npx cypress run
 ```
 * For the propose of this challenge we will work with test.spec.js
 * This test is located in cypress/e2e/
-* test.spec.js contains both scenarios that was sent it in mail.
+* test.spec.js contains both scenarios that was sent it in Lourdes email.
 ```
 ### UI
 ```
@@ -84,8 +84,8 @@ npx cypress open
 ```
 #### A UI runner will be open with "Welcome to Cypress!" should be appear.
 * Select E2E Testing. (Should be Configured first)
-* Choose a Browser and do click on Start E2E Testin in {browse}
-* A tree of test should be appear 
+* Choose a Browser and do click on Start E2E Testin in {browser}
+* A test tree should appear 
 * Do click on test.spec.js
 #### Test should be executed successfuly!
 
