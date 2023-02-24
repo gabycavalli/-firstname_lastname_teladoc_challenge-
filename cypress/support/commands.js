@@ -27,6 +27,22 @@ import deleteUser from "../pages/deleteUser"
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+// This is what I've been doing to get a delay between commands. You just have to make sure you're enumerating all the commands that you want a delay on in that array.
+const COMMAND_DELAY = 2000;
+
+
+for (const command of['visit', 'click', 'trigger', 'type', 'clear', 'reload', 'should']) {
+    Cypress.Commands.overwrite(command, (originalFn, ...args) => {
+        const origVal = originalFn(...args);
+
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(origVal);
+            }, COMMAND_DELAY);
+        });
+    });
+}
+
 Cypress.Commands.add('addUser', () => {
     addUser.addUserBtn()
     addUser.name()

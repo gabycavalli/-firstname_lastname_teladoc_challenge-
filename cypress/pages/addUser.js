@@ -15,7 +15,7 @@ class addUser {
         cy.get(':nth-child(3) > :nth-child(2) > .ng-pristine').type(data.userName)
     }
     static password() {
-        cy.get(':nth-child(4) > :nth-child(2) > .ng-pristine').type(data.password)
+        cy.get(':nth-child(4) > :nth-child(2) > .ng-pristine').type(data.password, { log: false })
     }
     static optCustomer() {
         cy.get(':nth-child(2) > :nth-child(1) > .ng-pristine').click()
