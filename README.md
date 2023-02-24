@@ -9,6 +9,9 @@ This challenge was done in Cypress 12+
 ```
 -firstname_lastname_teladoc_challenge-
 ```
+### Branch
+* Main
+
 ### Web
 ```
 https://github.com/gabycavalli/-firstname_lastname_teladoc_challenge-
