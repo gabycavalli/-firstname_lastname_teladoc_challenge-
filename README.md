@@ -54,19 +54,22 @@ npm install cypress --save-dev
 ## Run Cypress
 * If you want run Cypress in UI mode please run this command:
 
-```npx cypress open
+```
+npx cypress open
 ```
 * A UI runner will be open and you can select test that you want run
 
 ### Run Cypress by CLI mode
 #### Run specific tests o group of test
 
-```npx cypress run --spec "./cypress/e2e/**/*"
+```
+npx cypress run --spec "./cypress/e2e/**/*"
 ```
 
 ### Run all specs 
 
-```npx cypress run
+```
+npx cypress run
 ```
 
 ### Run Challenge test
@@ -76,7 +79,8 @@ npm install cypress --save-dev
 * test.spec.js contains both scenarios that was sent it in mail.
 ```
 ### UI
-```npx cypress open
+```
+npx cypress open
 ```
 #### A UI runner will be open with "Welcome to Cypress!" should be appear.
 * Select E2E Testing. (Should be Configured first)
@@ -88,7 +92,8 @@ npm install cypress --save-dev
 ### CLI
 * From command line execute this:
 
-``` npx cypress run --spec "./cypress/e2e/test.spec.js"
+``` 
+npx cypress run --spec "./cypress/e2e/test.spec.js"
 ```
 * Result
 ```
