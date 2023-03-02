@@ -1,6 +1,6 @@
 import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
-import addUser from '../../pages/addUser'
-import deleteUser from '../../pages/deleteUser'
+import addUser from '../pages/addUser'
+import deleteUser from '../pages/deleteUser'
 
 Given('A successful browse to the website', function () {
     cy.visit(Cypress.env('url'))
